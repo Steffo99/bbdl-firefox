@@ -1,0 +1,44 @@
+{
+  "manifest_version": 2,
+
+  "applications": {
+    "gecko": {
+      "id": "bbdl@steffo.eu"
+    }
+  },
+
+  "name": "bbdl",
+  "version": "2020.9.23.1",
+  "developer": {
+    "name": "Stefano Pigozzi",
+    "url": "https://github.com/Steffo99/bbdl-firefox"
+  },
+
+  "description": "A WebExtension to download BBCollab videos.",
+
+  "permissions": ["downloads"],
+
+  "background": {
+    "scripts": ["background.js"]
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["https://eu.bbcollab.com/*"],
+      "js": ["content.js"],
+      "css": []
+    }
+  ],
+
+  "icons": {
+    "64": "icon64.png"
+  },
+
+  "page_action": {
+    "default_icon": {
+      "64": "icon64.png"
+    },
+    "default_title": "Download bbcollab video",
+    "show_matches": ["https://eu.bbcollab.com/*"]
+  }
+}

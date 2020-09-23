@@ -1,0 +1,5 @@
+extension/web-ext-artifacts/
+*.xpi
+*.zip
+*.crx
+.idea/
