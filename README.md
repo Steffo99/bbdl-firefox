@@ -1,3 +1,9 @@
-# `bbdl`
+<div align="center">
 
-A WebExtension to download BBCollab videos.
+![](.media/icon-128x128_round.png)
+
+# bbdl
+
+BBCollab videos downloader
+
+</div>
